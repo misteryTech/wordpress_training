@@ -1,3 +1,5 @@
+
+<?php echo wp_create_nonce('test'); ?>
 <h4>Send Inquiry  <?php the_title(); ?></h4>
 
 <form class="row g-3 needs-validation" id="formsubmit" novalidate>

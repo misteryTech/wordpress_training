@@ -153,3 +153,14 @@ function inquiry_form()
         }
 
 }
+
+
+function short_code(){
+
+        ob_start();
+        get_template_part('includes/latest','cars');
+        $output = ob_get_clean();
+        return $output;
+}
+
+add_shortcode('latest_car','short_code');
